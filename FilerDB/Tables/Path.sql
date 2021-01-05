@@ -1,0 +1,8 @@
+﻿CREATE TABLE [dbo].[Path]
+(
+	[Id] BIGINT NOT NULL IDENTITY (1,1) PRIMARY KEY,
+
+	[ScanId] BIGINT REFERENCES [dbo].[Scan] (Id),
+
+	[Path] VARCHAR(MAX)
+)

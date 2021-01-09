@@ -44,7 +44,7 @@ namespace Filer
             this.btnScan.Location = new System.Drawing.Point(722, 13);
             this.btnScan.Name = "btnScan";
             this.btnScan.Size = new System.Drawing.Size(75, 23);
-            this.btnScan.TabIndex = 0;
+            this.btnScan.TabIndex = 2;
             this.btnScan.Text = "Scan";
             this.btnScan.UseVisualStyleBackColor = true;
             this.btnScan.Click += new System.EventHandler(this.btnScan_Click);
@@ -55,7 +55,7 @@ namespace Filer
             this.chkIncludeMd5.Location = new System.Drawing.Point(58, 42);
             this.chkIncludeMd5.Name = "chkIncludeMd5";
             this.chkIncludeMd5.Size = new System.Drawing.Size(155, 19);
-            this.chkIncludeMd5.TabIndex = 2;
+            this.chkIncludeMd5.TabIndex = 1;
             this.chkIncludeMd5.Text = "Include MD5 checksums";
             this.chkIncludeMd5.UseVisualStyleBackColor = true;
             // 
@@ -66,8 +66,8 @@ namespace Filer
             this.txtFolder.Location = new System.Drawing.Point(58, 13);
             this.txtFolder.Name = "txtFolder";
             this.txtFolder.Size = new System.Drawing.Size(658, 23);
-            this.txtFolder.TabIndex = 3;
-            this.txtFolder.Text = "C:\\UTILz";
+            this.txtFolder.TabIndex = 0;
+            this.txtFolder.Text = "C:\\";
             // 
             // lblFolder
             // 
@@ -88,12 +88,12 @@ namespace Filer
             this.rtbOutput.Name = "rtbOutput";
             this.rtbOutput.ReadOnly = true;
             this.rtbOutput.Size = new System.Drawing.Size(784, 342);
-            this.rtbOutput.TabIndex = 5;
+            this.rtbOutput.TabIndex = 3;
             this.rtbOutput.Text = "";
             // 
             // txtConnectionString
             // 
-            this.txtConnectionString.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txtConnectionString.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtConnectionString.Location = new System.Drawing.Point(13, 415);
             this.txtConnectionString.Name = "txtConnectionString";

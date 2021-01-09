@@ -73,5 +73,7 @@
     <Build Include="Views\Files.sql" />
     <Build Include="Views\FilesLatest.sql" />
     <Build Include="Views\ScansLatest.sql" />
+    <Build Include="Views\ScansStats.sql" />
+    <Build Include="Views\ScansWithStats.sql" />
   </ItemGroup>
 </Project>

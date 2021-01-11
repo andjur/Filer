@@ -63,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="FilerDB.publish.xml" />
+    <None Include="SqlSchemaCompare1.scmp" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Stored Procedures\File_insert.sql" />

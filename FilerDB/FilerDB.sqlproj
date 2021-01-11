@@ -56,24 +56,30 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
-    <Folder Include="Tables" />
-    <Folder Include="Stored Procedures" />
-    <Folder Include="Views" />
+    <Folder Include="dbo" />
+    <Folder Include="dbo\Stored Procedures" />
+    <Folder Include="dbo\Tables" />
+    <Folder Include="dbo\Views" />
   </ItemGroup>
   <ItemGroup>
     <None Include="FilerDB.publish.xml" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="Tables\File.sql" />
-    <Build Include="Tables\Path.sql" />
-    <Build Include="Tables\Scan.sql" />
-    <Build Include="Stored Procedures\Scan_insert.sql" />
-    <Build Include="Stored Procedures\Path_insert.sql" />
-    <Build Include="Stored Procedures\File_insert.sql" />
-    <Build Include="Views\Files.sql" />
-    <Build Include="Views\FilesLatest.sql" />
-    <Build Include="Views\ScansLatest.sql" />
-    <Build Include="Views\ScansStats.sql" />
-    <Build Include="Views\ScansWithStats.sql" />
+    <Build Include="dbo\Stored Procedures\File_insert.sql" />
+    <Build Include="dbo\Stored Procedures\Path_insert.sql" />
+    <Build Include="dbo\Stored Procedures\Scan_insert.sql" />
+    <Build Include="dbo\Stored Procedures\Scan_update_Completed.sql" />
+    <Build Include="dbo\Stored Procedures\Volume_insert.sql" />
+    <Build Include="dbo\Tables\File.sql" />
+    <Build Include="dbo\Tables\Path.sql" />
+    <Build Include="dbo\Tables\Scan.sql" />
+    <Build Include="dbo\Views\Files.sql" />
+    <Build Include="dbo\Views\FilesLatest.sql" />
+    <Build Include="dbo\Views\ScansLatest.sql" />
+    <Build Include="dbo\Views\ScansLatestWithMD5.sql" />
+    <Build Include="dbo\Views\ScansLatesWithStats.sql" />
+    <Build Include="dbo\Views\ScansLatesWithStatsWithMD5.sql" />
+    <Build Include="dbo\Views\ScansStats.sql" />
+    <Build Include="dbo\Views\ScansWithStats.sql" />
   </ItemGroup>
 </Project>

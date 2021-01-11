@@ -82,5 +82,6 @@
     <Build Include="dbo\Views\ScansLatestWithStatsWithMD5.sql" />
     <Build Include="dbo\Views\ScansStats.sql" />
     <Build Include="dbo\Views\ScansWithStats.sql" />
+    <Build Include="dbo\Views\ScansFoldersCounts.sql" />
   </ItemGroup>
 </Project>

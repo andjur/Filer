@@ -77,8 +77,8 @@
     <Build Include="dbo\Views\FilesLatest.sql" />
     <Build Include="dbo\Views\ScansLatest.sql" />
     <Build Include="dbo\Views\ScansLatestWithMD5.sql" />
-    <Build Include="dbo\Views\ScansLatesWithStats.sql" />
-    <Build Include="dbo\Views\ScansLatesWithStatsWithMD5.sql" />
+    <Build Include="dbo\Views\ScansLatestWithStats.sql" />
+    <Build Include="dbo\Views\ScansLatestWithStatsWithMD5.sql" />
     <Build Include="dbo\Views\ScansStats.sql" />
     <Build Include="dbo\Views\ScansWithStats.sql" />
   </ItemGroup>

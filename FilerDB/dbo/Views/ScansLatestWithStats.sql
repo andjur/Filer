@@ -1,10 +1,9 @@
-﻿
-CREATE VIEW [dbo].[ScansLatesWithStatsWithMD5]
+﻿CREATE VIEW [dbo].[ScansLatestWithStats]
 AS 
 SELECT
 	ST.*
 FROM 
-	[dbo].[ScansLatestWithMD5] AS SL
+	[dbo].[ScansLatest] AS SL
 
 	LEFT OUTER JOIN
 

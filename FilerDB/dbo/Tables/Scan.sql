@@ -8,6 +8,7 @@
 
 	[Started]   DATETIME NOT NULL,
 	[Completed] DATETIME NULL,
+	[Crashed]   DATETIME NULL,
 
     [DurationInSeconds] AS            (datediff(second,[Started],[Completed])),
     [DurationInMinutes] AS            (CONVERT([decimal](18,1),round(datediff(second,[Started],[Completed])/CONVERT([decimal](18,1),(60)),(1)))),

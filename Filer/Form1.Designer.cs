@@ -29,7 +29,6 @@ namespace Filer
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.btnScan = new System.Windows.Forms.Button();
             this.chkIncludeMd5 = new System.Windows.Forms.CheckBox();
             this.txtFolder = new System.Windows.Forms.TextBox();
@@ -44,8 +43,8 @@ namespace Filer
             this.btnScan.Location = new System.Drawing.Point(722, 13);
             this.btnScan.Name = "btnScan";
             this.btnScan.Size = new System.Drawing.Size(75, 23);
-            this.btnScan.TabIndex = 2;
-            this.btnScan.Text = "Scan";
+            this.btnScan.TabIndex = 3;
+            this.btnScan.Text = "&Scan";
             this.btnScan.UseVisualStyleBackColor = true;
             this.btnScan.Click += new System.EventHandler(this.btnScan_Click);
             // 
@@ -55,8 +54,8 @@ namespace Filer
             this.chkIncludeMd5.Location = new System.Drawing.Point(58, 42);
             this.chkIncludeMd5.Name = "chkIncludeMd5";
             this.chkIncludeMd5.Size = new System.Drawing.Size(155, 19);
-            this.chkIncludeMd5.TabIndex = 1;
-            this.chkIncludeMd5.Text = "Include MD5 checksums";
+            this.chkIncludeMd5.TabIndex = 2;
+            this.chkIncludeMd5.Text = "Include &MD5 checksums";
             this.chkIncludeMd5.UseVisualStyleBackColor = true;
             // 
             // txtFolder
@@ -66,7 +65,7 @@ namespace Filer
             this.txtFolder.Location = new System.Drawing.Point(58, 13);
             this.txtFolder.Name = "txtFolder";
             this.txtFolder.Size = new System.Drawing.Size(658, 23);
-            this.txtFolder.TabIndex = 0;
+            this.txtFolder.TabIndex = 1;
             this.txtFolder.Text = "C:\\";
             // 
             // lblFolder
@@ -75,8 +74,8 @@ namespace Filer
             this.lblFolder.Location = new System.Drawing.Point(12, 17);
             this.lblFolder.Name = "lblFolder";
             this.lblFolder.Size = new System.Drawing.Size(40, 15);
-            this.lblFolder.TabIndex = 4;
-            this.lblFolder.Text = "Folder";
+            this.lblFolder.TabIndex = 0;
+            this.lblFolder.Text = "&Folder";
             // 
             // rtbOutput
             // 
@@ -88,7 +87,7 @@ namespace Filer
             this.rtbOutput.Name = "rtbOutput";
             this.rtbOutput.ReadOnly = true;
             this.rtbOutput.Size = new System.Drawing.Size(784, 342);
-            this.rtbOutput.TabIndex = 3;
+            this.rtbOutput.TabIndex = 4;
             this.rtbOutput.Text = "";
             // 
             // txtConnectionString
@@ -98,8 +97,8 @@ namespace Filer
             this.txtConnectionString.Location = new System.Drawing.Point(13, 415);
             this.txtConnectionString.Name = "txtConnectionString";
             this.txtConnectionString.Size = new System.Drawing.Size(784, 23);
-            this.txtConnectionString.TabIndex = 3;
-            this.txtConnectionString.Text = resources.GetString("txtConnectionString.Text");
+            this.txtConnectionString.TabIndex = 5;
+            this.txtConnectionString.Text = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=Filer";
             // 
             // Form1
             // 

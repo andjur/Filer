@@ -113,7 +113,9 @@ namespace Filer
         private async void btnScan_Click(object sender, EventArgs e)
         {
             txtFolder.Text = txtFolder.Text.Trim(); // normalize input
+            //txtFolder.Text = @"c:\Users\Public"; // FIXME: 
 
+            rtbOutput.AppendText(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + " Scan started. (\""+ txtFolder.Text + "\" "+ (chkIncludeMd5.Checked ? "with" : "without") + " checksums)\n\n");
             var stopwatch = Stopwatch.StartNew();
 
             await Task.Run(() => 
@@ -122,7 +124,7 @@ namespace Filer
             });
 
             stopwatch.Stop();
-            rtbOutput.AppendText("Elapsed time: " + stopwatch.Elapsed.ToString(@"h\:mm\:ss\.fff") + " (" + (chkIncludeMd5.Checked ? "with" : "without") + " checksums)\n\n");
+            rtbOutput.AppendText(DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + " Scan finished. Elapsed time: " + stopwatch.Elapsed.ToString(@"h\:mm\:ss\.fff") + " (\"" + txtFolder.Text + "\" " + (chkIncludeMd5.Checked ? "with" : "without") + " checksums)\n\n");
         }
 
         private void Scan(string folder, bool includeMd5, string connectionString)

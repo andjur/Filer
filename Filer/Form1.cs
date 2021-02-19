@@ -100,8 +100,7 @@ namespace Filer
 
         private void btnScan_Click(object sender, EventArgs e)
         {
-            var timer = new Stopwatch();
-            timer.Start();
+            var stopwatch = Stopwatch.StartNew();
             {
                 txtFolder.Text = txtFolder.Text.Trim();
                 var startPath = txtFolder.Text;
@@ -131,8 +130,8 @@ namespace Filer
                     cmd.ExecuteNonQuery();
                 }
             }
-            timer.Stop();
-            rtbOutput.AppendText("Elapsed time: " + timer.Elapsed.ToString(@"h\:mm\:ss\.fff") + " (" + (chkIncludeMd5.Checked ? "with" : "without") + " checksums)\n\n");
+            stopwatch.Stop();
+            rtbOutput.AppendText("Elapsed time: " + stopwatch.Elapsed.ToString(@"h\:mm\:ss\.fff") + " (" + (chkIncludeMd5.Checked ? "with" : "without") + " checksums)\n\n");
         }
 
         /*
